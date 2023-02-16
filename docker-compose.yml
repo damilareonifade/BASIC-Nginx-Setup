@@ -21,6 +21,8 @@ services:
     volumes:
       - ./nginx/conf.d/:/etc/nginx/conf.d/
       - static:/home/app/staticfiles
+      - nginx/v1/:/home/html/v1/
+      - nginx/v2/:/home/html/v2/
 
 volumes:
   static: 
